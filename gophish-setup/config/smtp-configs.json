@@ -1,0 +1,121 @@
+{
+  "smtp_configurations": {
+    "gmail": {
+      "name": "Gmail SMTP",
+      "host": "smtp.gmail.com:587",
+      "username": "your-email@gmail.com",
+      "password": "your-app-password",
+      "from_address": "your-email@gmail.com",
+      "notes": [
+        "Enable 2-factor authentication",
+        "Generate app-specific password",
+        "Use app password instead of regular password"
+      ]
+    },
+    "outlook": {
+      "name": "Outlook/Hotmail SMTP",
+      "host": "smtp-mail.outlook.com:587",
+      "username": "your-email@outlook.com",
+      "password": "your-password",
+      "from_address": "your-email@outlook.com",
+      "notes": [
+        "Enable less secure app access if needed",
+        "Use OAuth2 for better security"
+      ]
+    },
+    "office365": {
+      "name": "Office 365 SMTP",
+      "host": "smtp.office365.com:587",
+      "username": "your-email@company.com",
+      "password": "your-password",
+      "from_address": "security@company.com",
+      "notes": [
+        "Requires organizational email account",
+        "May need admin approval for SMTP",
+        "Consider using app registration for OAuth"
+      ]
+    },
+    "sendgrid": {
+      "name": "SendGrid SMTP",
+      "host": "smtp.sendgrid.net:587",
+      "username": "apikey",
+      "password": "your-sendgrid-api-key",
+      "from_address": "noreply@yourdomain.com",
+      "notes": [
+        "Professional email delivery service",
+        "Better deliverability rates",
+        "Requires API key setup"
+      ]
+    },
+    "amazon_ses": {
+      "name": "Amazon SES SMTP",
+      "host": "email-smtp.us-east-1.amazonaws.com:587",
+      "username": "your-ses-smtp-username",
+      "password": "your-ses-smtp-password",
+      "from_address": "noreply@yourdomain.com",
+      "notes": [
+        "Requires AWS account and SES setup",
+        "Domain verification needed",
+        "Initially in sandbox mode"
+      ]
+    },
+    "local_server": {
+      "name": "Local SMTP Server",
+      "host": "localhost:25",
+      "username": "",
+      "password": "",
+      "from_address": "security@company.local",
+      "notes": [
+        "Requires local SMTP server setup",
+        "Good for internal testing",
+        "May be blocked by firewalls"
+      ]
+    }
+  },
+  "configuration_tips": {
+    "security": [
+      "Always use TLS/SSL encryption",
+      "Store credentials securely",
+      "Use app-specific passwords when available",
+      "Regular credential rotation"
+    ],
+    "deliverability": [
+      "Configure SPF records for your domain",
+      "Set up DKIM authentication",
+      "Implement DMARC policy",
+      "Monitor sender reputation"
+    ],
+    "testing": [
+      "Send test emails before campaigns",
+      "Check spam folder deliverability",
+      "Test with different email providers",
+      "Monitor bounce rates"
+    ]
+  },
+  "troubleshooting": {
+    "authentication_failed": [
+      "Verify username and password",
+      "Check if 2FA is enabled",
+      "Generate new app password",
+      "Verify SMTP server settings"
+    ],
+    "connection_timeout": [
+      "Check firewall settings",
+      "Verify SMTP server address",
+      "Test network connectivity",
+      "Try different ports (25, 587, 465)"
+    ],
+    "emails_not_delivered": [
+      "Check spam/junk folders",
+      "Verify sender reputation",
+      "Review email content for spam triggers",
+      "Check recipient email validity"
+    ],
+    "ssl_certificate_errors": [
+      "Update GoPhish to latest version",
+      "Check certificate validity",
+      "Verify TLS settings",
+      "Try different TLS versions"
+    ]
+  }
+}
