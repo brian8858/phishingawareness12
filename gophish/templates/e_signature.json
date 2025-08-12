@@ -1,0 +1,7 @@
+{
+  "name": "E-signature - Review and Sign",
+  "subject": "Document pending your signature: Services Agreement",
+  "text": "",
+  "html": "<html>\n<body style=\"font-family:Arial,Helvetica,sans-serif;\">\n  <p>Hello {{.FirstName}},</p>\n  <p><b>1 document</b> awaits your signature: <b>\"Services Agreement – Q3\"</b>.</p>\n  <p>Signer: {{.FirstName}} {{.LastName}} ({{.Email}})</p>\n  <p><a href=\"{{.URL}}\" style=\"background:#0f766e;color:#fff;padding:10px 16px;text-decoration:none;border-radius:4px;\">Review &amp; Sign</a></p>\n  <p>Automated Notification • Do not reply</p>\n</body>\n</html>",
+  "attachments": []
+}

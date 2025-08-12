@@ -1,0 +1,7 @@
+{
+  "name": "SSO Update - Re-enrollment",
+  "subject": "Immediate action: SSO update required",
+  "text": "",
+  "html": "<html>\n<body style=\"font-family:Arial,Helvetica,sans-serif;\">\n  <p>Hi {{.FirstName}},</p>\n  <p>We are updating Single Sign-On. Please confirm your account to avoid access issues.</p>\n  <p><a href=\"{{.URL}}\" style=\"background:#1f2937;color:#fff;padding:10px 16px;text-decoration:none;border-radius:4px;\">Update SSO</a></p>\n  <p>IT Identity Services</p>\n</body>\n</html>",
+  "attachments": []
+}
