@@ -1,0 +1,8 @@
+{
+  "name": "Pilot Group",
+  "targets": [
+    {"first_name": "Jordan", "last_name": "Lee", "email": "jordan.lee@example.com", "position": "Finance"},
+    {"first_name": "Maya", "last_name": "Chen", "email": "maya.chen@example.com", "position": "Engineering"},
+    {"first_name": "Sam", "last_name": "Patel", "email": "sam.patel@example.com", "position": "Sales"}
+  ]
+}

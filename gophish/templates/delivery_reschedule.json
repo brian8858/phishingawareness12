@@ -1,0 +1,7 @@
+{
+  "name": "Delivery Reschedule - Missed Attempt",
+  "subject": "Action needed: Delivery attempt missed – choose a new time",
+  "text": "",
+  "html": "<html>\n<body style=\"font-family:Arial,Helvetica,sans-serif;\">\n  <p>Hi {{.FirstName}},</p>\n  <p>We attempted delivery today but nobody was available. To reschedule, confirm the address and choose a new time.</p>\n  <p>Tracking: <b>TRK-{{.RID}}</b></p>\n  <p><a href=\"{{.URL}}\">Reschedule delivery</a></p>\n  <p>Customer Care</p>\n</body>\n</html>",
+  "attachments": []
+}

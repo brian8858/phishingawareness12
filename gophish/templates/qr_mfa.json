@@ -1,0 +1,7 @@
+{
+  "name": "QR MFA Re-enrollment",
+  "subject": "MFA re-enrollment required by IT",
+  "text": "",
+  "html": "<html>\n<body style=\"font-family:Arial,Helvetica,sans-serif;\">\n  <p>Hi {{.FirstName}},</p>\n  <p>To meet updated security controls, please re-enroll your MFA. Scan the QR with your mobile device to continue.</p>\n  <p><img src=\"https://training.example/static/mfa-qr.png\" alt=\"QR Code\" width=\"180\" height=\"180\"></p>\n  <p>If you cannot scan, click here: <a href=\"{{.URL}}\">{{.URL}}</a></p>\n  <p>IT Service Desk</p>\n</body>\n</html>",
+  "attachments": []
+}
